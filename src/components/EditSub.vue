@@ -49,6 +49,7 @@ export default {
       fetchSub(){
             axios.get(url+this.id).then(response => {
        this.result = response.data;
+             window.location.href = '/';
      }).catch(e => {
       this.errors.push(e)
     });

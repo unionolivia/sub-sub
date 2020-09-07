@@ -59,6 +59,7 @@ export default {
         title: this.result.title, type: this.result.type
      }).then(response => {
        this.message = response.data;
+             window.location.href = '/field';
      }).catch(e => {
       this.errors.push(e)
     });

@@ -80,6 +80,7 @@ export default {
       .then((response) => {
         // JSON responses are automatically parsed.
         console.log(response)
+          window.location.href = '/field';
       })
       .catch((e) => {
         console.log(e)

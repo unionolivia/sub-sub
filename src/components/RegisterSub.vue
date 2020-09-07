@@ -49,6 +49,7 @@ export default {
         email_address: this.sub.email_address, name: this.sub.name
      }).then(response => {
        this.message = response.data;
+       window.location.href = '/';
      }).catch(e => {
       this.errors.push(e)
     });
