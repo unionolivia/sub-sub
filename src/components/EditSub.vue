@@ -49,7 +49,6 @@ export default {
       fetchSub(){
             axios.get(url+this.id).then(response => {
        this.result = response.data;
-             window.location.href = '/';
      }).catch(e => {
       this.errors.push(e)
     });
@@ -59,6 +58,7 @@ export default {
         email_address: this.result.email_address, name: this.result.name
      }).then(response => {
        this.message = response.data;
+            window.location.href = '/';
      }).catch(e => {
       this.errors.push(e)
     });
